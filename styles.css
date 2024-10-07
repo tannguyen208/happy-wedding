@@ -118,7 +118,7 @@ body {
 
 .darksoul-pop-up {
   position: absolute;
-  top: 12%;
+  top: 84px;
   right: 0;
   margin: auto;
   margin-right: 3%;
@@ -129,6 +129,8 @@ body {
   flex-direction: column;
   opacity: 0%;
   animation: pop-up 0.3s 0s 1 linear forwards;
+  z-index: 9999;
+  box-shadow: 8px 8px 24px 8px #f1f1f1;
 }
 .darksoul-pop-up .darksoul-pop-up-top {
   margin: auto;
@@ -152,13 +154,13 @@ body {
 .darksoul-pop-up .darksoul-pop-up-content {
   margin: auto;
   margin-left: 0px;
-  width: 90%;
-  height: 70%;
+  width: 274px;
+  height: 352px;
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
   border-radius: 30px;
-  padding: 7%;
+  padding: 16px;
 }
 .darksoul-pop-up .darksoul-pop-up-content p {
   margin: auto;
