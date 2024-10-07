@@ -5,6 +5,50 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Save The Date</title>
+    <meta
+      name="title"
+      content="Save The Date" />
+    <meta
+      name="description"
+      content="Tuesday, November 5th, from 11:00 am to 3:00 pm." />
+
+    <!-- Open Graph / Facebook -->
+    <meta
+      property="og:type"
+      content="website" />
+    <meta
+      property="og:url"
+      content="https://tannguyen208.github.io/happy-wedding/" />
+    <meta
+      property="og:title"
+      content="Save The Date" />
+    <meta
+      property="og:description"
+      content="Tuesday, November 5th, from 11:00 am to 3:00 pm." />
+    <meta
+      property="og:image"
+      content="https://repository-images.githubusercontent.com/868812323/c13cb64e-e1e3-48ba-810e-0e34c65b0578" />
+
+    <!-- Twitter -->
+    <meta
+      property="twitter:card"
+      content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://tannguyen208.github.io/happy-wedding/" />
+    <meta
+      property="twitter:title"
+      content="Save The Date" />
+    <meta
+      property="twitter:description"
+      content="Tuesday, November 5th, from 11:00 am to 3:00 pm." />
+    <meta
+      property="twitter:image"
+      content="https://repository-images.githubusercontent.com/868812323/c13cb64e-e1e3-48ba-810e-0e34c65b0578" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -84,8 +128,7 @@
       <div
         class="text-[1.2rem]"
         style="font-family: 'YAFdJi-0PQg 0', _fb_, auto">
-        Sunday, October 27th <br />
-        at 11:00 am - 15:00 pm
+        Tuesday, November 5th, <br />from 11:00 am to 3:00 pm.
       </div>
 
       <a
@@ -112,7 +155,11 @@
           </svg>
           Chau Hung, Binh Dai, Ben Tre
         </div>
-        <div class="text-[0.8rem]" style="transform: translateX(-5px);">(DIEN THO PHAT MAU CHAU HUNG)</div>
+        <div
+          class="text-[0.8rem]"
+          style="transform: translateX(-5px)">
+          (DIEN THO PHAT MAU CHAU HUNG)
+        </div>
       </a>
 
       <div
@@ -138,7 +185,7 @@
       </div>
       <div class="darksoul-pop-up-content">
         <img
-          src="https://img.vietqr.io/image/MB-0357833112-qr_only.png?size=200&addInfo=CHÚC MỪNG ĐÁM CƯỚI EM TẤN"
+          src="https://img.vietqr.io/image/MB-0357833112-qr_only.png?size=200"
           alt="" />
         <p class="font-semibold mt-2">MB BANK</p>
         <p>0357 833 112</p>
@@ -149,7 +196,9 @@
 
   <script>
     const params = new URLSearchParams(window.location.search);
-    document.getElementById('to').innerHTML = (params.get('name') || 'you') + '+';
+    const name = params.get('name');
+    const isMultiple = params.get('multiple');
+    document.getElementById('to').innerHTML = isMultiple ? name : `${name} +`;
 
     const qrcode = document.getElementById('qrcode');
 
