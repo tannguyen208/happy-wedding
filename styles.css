@@ -1,0 +1,222 @@
+body {
+  width: 100vw;
+  height: 100vh;
+
+  overflow-x: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(61, 74, 44);
+  font-kerning: none;
+  text-decoration: none;
+  font-size: 100%;
+  background-image: url(https://media-public.canva.com/60Kyg/MAEmgc60Kyg/2/s3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.t-wrapper {
+  overflow: hidden;
+  padding: 4% 5% 3% 5%;
+  border: 1px solid;
+  background-color: #f5f5f580;
+}
+
+.flower-1 {
+  width: 247.66px;
+  height: 389.25px;
+  transform: translate(-25px, -15.0179px) rotate(36deg);
+  top: 0;
+  left: 0;
+}
+.flower-2 {
+  width: 174.36px;
+  height: 274.044px;
+  transform: translate(0px, 0px) rotate(-64deg);
+  right: -2%;
+  top: 5%;
+}
+.flower-3 {
+  width: 314.975px;
+  height: 495.049px;
+  transform: translate(0px, -2.84217e-14px) rotate(0deg);
+  bottom: -20%;
+  left: 4%;
+}
+.flower-4 {
+  width: 381.716px;
+  height: 599.946px;
+  transform: translate(0px, -5.68434e-14px) rotate(0deg);
+  bottom: -20%;
+  right: 4%;
+}
+
+#to {
+  font-size: 1rem;
+  font-family: 'YAFdJi-0PQg 0';
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 4px;
+  border-bottom: 1px dashed;
+}
+
+.naming {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'YAE2gr0Mbng 0', _fb_, auto;
+  font-size: 6rem;
+  line-height: 4rem;
+  letter-spacing: 0em;
+  text-transform: none;
+  list-style-type: none;
+}
+
+.naming .and {
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .naming {
+    font-size: 4rem;
+    line-height: 3rem;
+  }
+  .naming .and {
+    font-size: 2rem;
+  }
+  .t-wrapper {
+    border: none;
+    height: 100vh;
+  }
+}
+
+.qrcode {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  z-index: 1;
+
+  padding: 1.5rem;
+  width: 8rem;
+  border-radius: 50%;
+  background: #e4e7d585;
+  transform: scale(1.5) translate(3rem, -3rem);
+  height: 8rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+
+  cursor: pointer;
+}
+
+.darksoul-pop-up {
+  position: absolute;
+  top: 12%;
+  right: 0;
+  margin: auto;
+  margin-right: 3%;
+  width: 300px;
+  height: fit-content;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0%;
+  animation: pop-up 0.3s 0s 1 linear forwards;
+}
+.darksoul-pop-up .darksoul-pop-up-top {
+  margin: auto;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  transform: translateY(12px);
+}
+.darksoul-pop-up .darksoul-pop-up-top img {
+  margin: auto;
+  margin-right: 0px;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+}
+.darksoul-pop-up .darksoul-pop-up-top img:hover {
+  background-color: rgb(0, 0, 0);
+  padding: 5px;
+}
+.darksoul-pop-up .darksoul-pop-up-content {
+  margin: auto;
+  margin-left: 0px;
+  width: 90%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding: 7%;
+}
+.darksoul-pop-up .darksoul-pop-up-content p {
+  margin: auto;
+  font-size: medium;
+  text-align: left;
+}
+.darksoul-pop-up .darksoul-pop-up-content a {
+  text-decoration: none;
+}
+.darksoul-pop-up .darksoul-pop-up-content button {
+  all: unset;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: fit-content;
+  min-width: 100px;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 0.5px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: small;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  display: flex;
+}
+.darksoul-pop-up .darksoul-pop-up-content button:hover {
+  background-color: black;
+  color: white;
+}
+.darksoul-pop-up .darksoul-pop-up-content button p {
+  margin: auto;
+  width: 80%;
+}
+.darksoul-pop-up .darksoul-pop-up-content button img {
+  margin: auto;
+  width: 182px;
+  height: 182px;
+}
+
+@keyframes pop-up {
+  0% {
+    opacity: 0%;
+    margin-top: 0px;
+  }
+  100% {
+    opacity: 100%;
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .darksoul-pop-up {
+    zoom: 0.8;
+  }
+}

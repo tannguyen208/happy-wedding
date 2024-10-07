@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="font.css" />
+    <link
+      rel="stylesheet"
+      href="styles.css" />
+
+    <title>The wedding</title>
+  </head>
+  <body class="relative">
+    <div
+      id="qrcode"
+      onclick="openpopup()"
+      class="qrcode">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 3.75 9.375v-4.5ZM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 0 1-1.125-1.125v-4.5ZM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 13.5 9.375v-4.5Z" />
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6.75 6.75h.75v.75h-.75v-.75ZM6.75 16.5h.75v.75h-.75v-.75ZM16.5 6.75h.75v.75h-.75v-.75ZM13.5 13.5h.75v.75h-.75v-.75ZM13.5 19.5h.75v.75h-.75v-.75ZM19.5 13.5h.75v.75h-.75v-.75ZM19.5 19.5h.75v.75h-.75v-.75ZM16.5 16.5h.75v.75h-.75v-.75Z" />
+      </svg>
+    </div>
+
+    <img
+      class="fixed flower-1"
+      src="https://media-public.canva.com/MADpizf34eQ/1/screen.png"
+      alt="" />
+    <img
+      class="fixed flower-2"
+      src="https://media-public.canva.com/MADpizf34eQ/1/screen.png"
+      alt="" />
+    <img
+      class="fixed flower-3"
+      src="https://media-public.canva.com/MADpizf34eQ/1/screen.png"
+      alt="" />
+    <img
+      class="fixed flower-4"
+      src="https://media-public.canva.com/MADpizf34eQ/1/screen.png"
+      alt="" />
+    <div class="t-wrapper flex flex-col items-center justify-center gap-12 text-center relative">
+      <img
+        class="absolute w-[120px] h-[120px] rotate-90 top-[-36px] left-[-36px]"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAABQCAYAAABh05mTAAAAAXNSR0IArs4c6QAAAp1JREFUeF7t3F9SwjAQBvANXocj+AcfdbwTcCcHH0HxCL2O4Cwz20lDk27hG6Xt55NWurQ/vmwSZAySfD2+zldfm2qVHufPeYFAxOvjQcTrDYWIRAQIAEq4ksjJpixNRCYRIAAowSQSESAAKMEkEhEgACjBJP4XIteNTfmLkkhEIgIGMBGJCBcAFGRPJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSfwrRH2e+MPu/OB7U96VREM8zGT3/V7tiHghokEej/Kk3+8/qmfASBhFCXcS47tlEq9Iop1KRCLCWwiHM4CUiEQECABKtCbR1oO5+pxYOiaWdHfSBtmGqMe68AEv+k2WOEuiZxmTbgEVLxxku99U2Xo3efegiyretGLpDuV4J2vd7sXA8fMr4uwgi6n+y0BXcu7f5gtFMjiFjbd9Dy/z7ZS3gS7ENPVpTySiiGjS4uHa1SpiRD1XH9/n/K76Q/t9nURNU9r7SkucemiLLIPIOn6svdNTHwuykKPsQpDPoQD16e81oqbLbjBXwCaauP951oyexwwFt+06Gz3R1nrhR5aaGpt14wmlbab2vGpjhjxDjEHiXmkzdArmxbHzx7ggLyLG0c1heRGtlmFa3xxKnyyNNjdibhljvdQzpIfc90rX7kLsWsb0XSKNDbNGLEHl+mE6RKeaxsY6sbR16+p9Cq2zunetOaY0nhBtaZPuj22Z0+dvzek+e0xYuXsJpwQdZKu7jrbhGM+mijrVIVucWLyTAmfhPGOvd3G84FMYwvE9/gJ8toyyD/ZSiwAAAABJRU5ErkJggg==" />
+      <img
+        class="absolute w-[120px] h-[120px] rotate-180 top-[-36px] right-[-36px]"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAABQCAYAAABh05mTAAAAAXNSR0IArs4c6QAAAp1JREFUeF7t3F9SwjAQBvANXocj+AcfdbwTcCcHH0HxCL2O4Cwz20lDk27hG6Xt55NWurQ/vmwSZAySfD2+zldfm2qVHufPeYFAxOvjQcTrDYWIRAQIAEq4ksjJpixNRCYRIAAowSQSESAAKMEkEhEgACjBJP4XIteNTfmLkkhEIgIGMBGJCBcAFGRPJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSfwrRH2e+MPu/OB7U96VREM8zGT3/V7tiHghokEej/Kk3+8/qmfASBhFCXcS47tlEq9Iop1KRCLCWwiHM4CUiEQECABKtCbR1oO5+pxYOiaWdHfSBtmGqMe68AEv+k2WOEuiZxmTbgEVLxxku99U2Xo3efegiyretGLpDuV4J2vd7sXA8fMr4uwgi6n+y0BXcu7f5gtFMjiFjbd9Dy/z7ZS3gS7ENPVpTySiiGjS4uHa1SpiRD1XH9/n/K76Q/t9nURNU9r7SkucemiLLIPIOn6svdNTHwuykKPsQpDPoQD16e81oqbLbjBXwCaauP951oyexwwFt+06Gz3R1nrhR5aaGpt14wmlbab2vGpjhjxDjEHiXmkzdArmxbHzx7ggLyLG0c1heRGtlmFa3xxKnyyNNjdibhljvdQzpIfc90rX7kLsWsb0XSKNDbNGLEHl+mE6RKeaxsY6sbR16+p9Cq2zunetOaY0nhBtaZPuj22Z0+dvzek+e0xYuXsJpwQdZKu7jrbhGM+mijrVIVucWLyTAmfhPGOvd3G84FMYwvE9/gJ8toyyD/ZSiwAAAABJRU5ErkJggg==" />
+      <img
+        class="absolute w-[120px] h-[120px] rotate-0 bottom-[-36px] left-[-36px]"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAABQCAYAAABh05mTAAAAAXNSR0IArs4c6QAAAp1JREFUeF7t3F9SwjAQBvANXocj+AcfdbwTcCcHH0HxCL2O4Cwz20lDk27hG6Xt55NWurQ/vmwSZAySfD2+zldfm2qVHufPeYFAxOvjQcTrDYWIRAQIAEq4ksjJpixNRCYRIAAowSQSESAAKMEkEhEgACjBJP4XIteNTfmLkkhEIgIGMBGJCBcAFGRPJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSfwrRH2e+MPu/OB7U96VREM8zGT3/V7tiHghokEej/Kk3+8/qmfASBhFCXcS47tlEq9Iop1KRCLCWwiHM4CUiEQECABKtCbR1oO5+pxYOiaWdHfSBtmGqMe68AEv+k2WOEuiZxmTbgEVLxxku99U2Xo3efegiyretGLpDuV4J2vd7sXA8fMr4uwgi6n+y0BXcu7f5gtFMjiFjbd9Dy/z7ZS3gS7ENPVpTySiiGjS4uHa1SpiRD1XH9/n/K76Q/t9nURNU9r7SkucemiLLIPIOn6svdNTHwuykKPsQpDPoQD16e81oqbLbjBXwCaauP951oyexwwFt+06Gz3R1nrhR5aaGpt14wmlbab2vGpjhjxDjEHiXmkzdArmxbHzx7ggLyLG0c1heRGtlmFa3xxKnyyNNjdibhljvdQzpIfc90rX7kLsWsb0XSKNDbNGLEHl+mE6RKeaxsY6sbR16+p9Cq2zunetOaY0nhBtaZPuj22Z0+dvzek+e0xYuXsJpwQdZKu7jrbhGM+mijrVIVucWLyTAmfhPGOvd3G84FMYwvE9/gJ8toyyD/ZSiwAAAABJRU5ErkJggg==" />
+      <img
+        class="absolute w-[120px] h-[120px] rotate-[-90deg] bottom-[-36px] right-[-36px]"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAABQCAYAAABh05mTAAAAAXNSR0IArs4c6QAAAp1JREFUeF7t3F9SwjAQBvANXocj+AcfdbwTcCcHH0HxCL2O4Cwz20lDk27hG6Xt55NWurQ/vmwSZAySfD2+zldfm2qVHufPeYFAxOvjQcTrDYWIRAQIAEq4ksjJpixNRCYRIAAowSQSESAAKMEkEhEgACjBJP4XIteNTfmLkkhEIgIGMBGJCBcAFGRPJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSSQiQABQgkkkIkAAUIJJJCJAAFCCSfwrRH2e+MPu/OB7U96VREM8zGT3/V7tiHghokEej/Kk3+8/qmfASBhFCXcS47tlEq9Iop1KRCLCWwiHM4CUiEQECABKtCbR1oO5+pxYOiaWdHfSBtmGqMe68AEv+k2WOEuiZxmTbgEVLxxku99U2Xo3efegiyretGLpDuV4J2vd7sXA8fMr4uwgi6n+y0BXcu7f5gtFMjiFjbd9Dy/z7ZS3gS7ENPVpTySiiGjS4uHa1SpiRD1XH9/n/K76Q/t9nURNU9r7SkucemiLLIPIOn6svdNTHwuykKPsQpDPoQD16e81oqbLbjBXwCaauP951oyexwwFt+06Gz3R1nrhR5aaGpt14wmlbab2vGpjhjxDjEHiXmkzdArmxbHzx7ggLyLG0c1heRGtlmFa3xxKnyyNNjdibhljvdQzpIfc90rX7kLsWsb0XSKNDbNGLEHl+mE6RKeaxsY6sbR16+p9Cq2zunetOaY0nhBtaZPuj22Z0+dvzek+e0xYuXsJpwQdZKu7jrbhGM+mijrVIVucWLyTAmfhPGOvd3G84FMYwvE9/gJ8toyyD/ZSiwAAAABJRU5ErkJggg==" />
+
+      <span
+        class="text-[1.2rem] uppercase text-center"
+        style="font-family: 'YAFdJi-0PQg 0', _fb_, auto"
+        >you are invited to celebrate<br />
+        the wedding of
+      </span>
+
+      <div class="naming">
+        <span>Anh Tấn</span>
+        <span class="and">&</span>
+        <span>Ngân Đình</span>
+      </div>
+
+      <div
+        class="text-[1.2rem]"
+        style="font-family: 'YAFdJi-0PQg 0', _fb_, auto">
+        Sunday, October 27th <br />
+        at 11:00 am - 15:00 pm
+      </div>
+
+      <a
+        class="text-[1.2rem]"
+        href="https://maps.app.goo.gl/hogURHEa1VWQ4Eua9"
+        target="_blank"
+        style="font-family: 'YAFdJi-0PQg 0', _fb_, auto">
+        <div class="flex flex-row gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+          </svg>
+          Chau Hung, Binh Dai, Ben Tre
+        </div>
+        <div class="text-[0.8rem]" style="transform: translateX(-5px);">(DIEN THO PHAT MAU CHAU HUNG)</div>
+      </a>
+
+      <div
+        class="text-[1rem]"
+        style="font-family: 'YAFdJi-0PQg 0', _fb_, auto">
+        With great joy, we invite
+        <span id="to"></span>
+        to our wedding celebration.
+      </div>
+    </div>
+
+    <div
+      class="darksoul-pop-up"
+      id="pop-up">
+      <div class="darksoul-pop-up-top">
+        <img
+          id="close-btn"
+          onclick="closepopup()"
+          width="32"
+          height="32"
+          src="https://img.icons8.com/ios-glyphs/100/ffffff/delete-sign.png"
+          alt="delete-sign" />
+      </div>
+      <div class="darksoul-pop-up-content">
+        <img
+          src="https://img.vietqr.io/image/MB-0357833112-qr_only.png?size=200&addInfo=CHÚC MỪNG ĐÁM CƯỚI EM TẤN"
+          alt="" />
+        <p class="font-semibold mt-2">MB BANK</p>
+        <p>0357 833 112</p>
+        <p class="font-semibold">NGUYEN ANH TAN</p>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById('to').innerHTML = (params.get('name') || 'you') + '+';
+
+    const qrcode = document.getElementById('qrcode');
+
+    var popup = document.getElementById('pop-up');
+    popup.style.display = 'none';
+    var closebtn = document.getElementById('close-btn');
+    function openpopup() {
+      popup.style.display = 'block';
+    }
+    function closepopup() {
+      popup.style.display = 'none';
+    }
+  </script>
+</html>
